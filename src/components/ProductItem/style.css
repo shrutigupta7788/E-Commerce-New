@@ -1,0 +1,37 @@
+.imgWrapper {
+  border-radius: 12px !important;
+}
+
+.productItem .title {
+  line-height: 18px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #ff5252 !important;
+  
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+
+
+.productItem:hover{
+    .actions{
+        top: 15px !important;
+        opacity: 100;
+
+    }
+}
+
+.productItem .actions button:hover svg{
+    color: #fff !important;
+
+}
+
+.productItem .actions  button svg{
+    pointer-events: none !important;
+}

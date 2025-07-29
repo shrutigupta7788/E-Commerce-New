@@ -1,0 +1,38 @@
+.categoryPanel button{text-transform: capitalize !important;}
+
+.nav li .submenu{visibility: hidden; z-index: 1000;}
+
+.nav li .submenu button{
+    font-weight: 400 !important;
+}
+
+.nav li:hover .submenu{opacity: 1 !important; visibility: inherit; top: 100%;}
+
+/* .nav li .submenu li:hover button{color: #ff5252 !important;} */
+
+.nav li .submenu li .submenu{top: 0px !important;left: 120% !important; opacity: 0 !important;}
+
+.nav li .submenu li:hover .submenu{left: 100% !important;opacity: 1 !important;}
+
+.nav li .submenu li .submenu button{color: rgba(0,0,0,0,80) !important;}
+
+/* .nav li .submenu li .submenu button:hover{color: #ff5252 !important;} */
+
+
+.swiper-button-prev ,.swiper-button-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    box-shadow: 0 1px 3px #0000001f !important;
+
+}
+
+.swiper-button-prev::after ,.swiper-button-next::after{
+    font-size: 20px !important;
+    color: #000;
+}
