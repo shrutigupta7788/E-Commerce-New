@@ -1,5 +1,8 @@
 .imgWrapper {
-  border-radius: 12px !important;
+
+ .img{
+   border-radius: 12px !important;
+ }
 }
 
 .productItem .title {

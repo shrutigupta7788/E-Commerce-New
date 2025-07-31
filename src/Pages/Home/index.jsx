@@ -4,71 +4,68 @@ import HomeCatslider from "../../components/HomeCatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
 
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box'
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+
 import ProductsSlider from "../../components/ProductsSlider";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
+
+import { Navigation } from "swiper/modules";
+import BlogItem from "../../components/BlogItem";
+import Footer from "../../components/Footer";
+
+
 const Home = () => {
-
-
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-  };
-
-
-
-
-
+};
 
   return (
     <>
       <HomeSlider />
       <HomeCatslider />
+      <section className="bg-white !py-8">
+        <div className="container">
+          <div className="flex items-center justify-between">
+            <div className="leftSec">
+              <h2 className="text-[20px] font-[600]">Popular Products</h2>
+              <p className="text-[14px] font-[400]">
+                Do not miss the current offers until the end of March.
+              </p>
+            </div>
 
-    <section className="bg-white !py-8">
-      <div className="container">
-        <div className="flex items-center justify-between">
-          <div className="leftSec">
-            <h2 className="text-[20px] font-[600]">Popular Products</h2>
-            <p className="text-[14px] font-[400]">Do not miss the current offers until the end of March.</p>
+            <div className="rightSec w-[60%] ">
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
+              >
+                <Tab label="Fashion" />
+                <Tab label="Electronics" />
+                <Tab label="Bags" />
+                <Tab label="Footwear" />
+                <Tab label="Groceries" />
+                <Tab label="Beauty" />
+                <Tab label="Wellness" />
+                <Tab label="Jewellery" />
+              </Tabs>
+            </div>
           </div>
 
-          <div className="rightSec w-[60%] ">
-
-        <Tabs
-        value={value}
-        onChange={handleChange}
-        variant="scrollable"
-        scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
-      >
-        <Tab label="Fashion" />
-        <Tab label="Electronics" />
-        <Tab label="Bags" />
-        <Tab label="Footwear" />
-        <Tab label="Groceries" />
-        <Tab label="Beauty" />
-        <Tab label="Wellness" />
-          <Tab label="Jewellery" />
-        
-      </Tabs>           
-          </div>
+          <ProductsSlider items={6} />
 
         </div>
+      </section>
 
-
-            <ProductsSlider items={6}/>
-
-
-      </div>
-    </section>
-
-
-
-      <section className="!py-5 bg-white">
+      <section className="!py-4 pt-2 bg-white">
         <div className="container">
           <div className="freeShipping !w-[80%] !m-auto !py-2 !p-4  border-2 border-[#ff5252] flex items-center justify-between rounded-md !mb-7">
             <div className="col1 flex items-center gap-4">
@@ -83,20 +80,75 @@ const Home = () => {
             </div>
 
             <p className="font-bold text-[25px]">- Only $200*</p>
-
           </div>
 
+          <AdsBannerSlider items={4} />
+        </div>
+      </section>
 
-            <AdsBannerSlider items={4}/>
-            
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+           <h2 className="text-[20px] font-[600]">Latest Products</h2>
+          <ProductsSlider items={6} />
 
+          <AdsBannerSlider items={3} />
 
         </div>
       </section>
 
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+           <h2 className="text-[20px] font-[600]">Featured Products</h2>
+          <ProductsSlider items={6} />
 
-      
-      <br /> <br /> <br /> <br /> <br />
+          <AdsBannerSlider items={3} />
+          
+          
+        </div>
+      </section>
+
+    <section className="py-5 !pb-8 pt-0 bg-white blogSection">
+    <div className="container">
+  <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
+         <Swiper
+                  slidesPerView={4}
+                  navigation={true}
+                  spaceBetween={30}
+                  modules={[Navigation]}
+                  className="blogSlider"
+                >
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <BlogItem/>
+                  </SwiperSlide>
+
+                  </Swiper>
+    </div>
+    </section>
+    
+    <Footer/>
+   
+
+
     </>
   );
 };
