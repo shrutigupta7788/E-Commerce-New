@@ -13,22 +13,37 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem";
 import Footer from "../../components/Footer";
-
+import HomeBannerV2 from "../../components/HomeSliderV2";
+import BannerBoxV2 from "../../components/BannerBoxV2";
 
 const Home = () => {
-const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-};
+  };
 
   return (
     <>
       <HomeSlider />
+
+      <section className="!py-6">
+        <div className="container flex  gap-5">
+          <div className="part1 !w-[70%] ">
+            <HomeBannerV2 />
+          </div>
+
+          <div className="part2 !w-[30%] flex items-center !gap-5 justify-between flex-col">
+            <BannerBoxV2 info="left" image={'https://serviceapi.spicezgold.com/download/1741664496923_1737020250515_New_Project_47.jpg '}/>
+
+              <BannerBoxV2 info="right" image={'https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg'}/>
+          </div>
+        </div>
+      </section>
+
       <HomeCatslider />
       <section className="bg-white !py-8">
         <div className="container">
@@ -61,7 +76,6 @@ const [value, setValue] = React.useState(0);
           </div>
 
           <ProductsSlider items={6} />
-
         </div>
       </section>
 
@@ -88,67 +102,60 @@ const [value, setValue] = React.useState(0);
 
       <section className="py-5 pt-0 bg-white">
         <div className="container">
-           <h2 className="text-[20px] font-[600]">Latest Products</h2>
+          <h2 className="text-[20px] font-[600]">Latest Products</h2>
           <ProductsSlider items={6} />
 
           <AdsBannerSlider items={3} />
-
         </div>
       </section>
 
       <section className="py-5 pt-0 bg-white">
         <div className="container">
-           <h2 className="text-[20px] font-[600]">Featured Products</h2>
+          <h2 className="text-[20px] font-[600]">Featured Products</h2>
           <ProductsSlider items={6} />
 
           <AdsBannerSlider items={3} />
-          
-          
         </div>
       </section>
 
-    <section className="py-5 !pb-8 pt-0 bg-white blogSection">
-    <div className="container">
-  <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
-         <Swiper
-                  slidesPerView={4}
-                  navigation={true}
-                  spaceBetween={30}
-                  modules={[Navigation]}
-                  className="blogSlider"
-                >
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+      <section className="py-5 !pb-8 pt-0 bg-white blogSection">
+        <div className="container">
+          <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
+          <Swiper
+            slidesPerView={4}
+            navigation={true}
+            spaceBetween={30}
+            modules={[Navigation]}
+            className="blogSlider"
+          >
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
 
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
 
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
 
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
 
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
 
-                  <SwiperSlide>
-                    <BlogItem/>
-                  </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
 
-                  </Swiper>
-    </div>
-    </section>
-    
-    <Footer/>
-   
-
-
+      <Footer />
     </>
   );
 };
