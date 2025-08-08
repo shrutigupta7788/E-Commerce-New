@@ -3,6 +3,7 @@ import HomeSlider from "../../components/HomeSlider";
 import HomeCatslider from "../../components/HomeCatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -15,7 +16,7 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../components/Footer";
+
 import HomeBannerV2 from "../../components/HomeSliderV2";
 import BannerBoxV2 from "../../components/BannerBoxV2";
 
@@ -37,9 +38,19 @@ const Home = () => {
           </div>
 
           <div className="part2 !w-[30%] flex items-center !gap-5 justify-between flex-col">
-            <BannerBoxV2 info="left" image={'https://serviceapi.spicezgold.com/download/1741664496923_1737020250515_New_Project_47.jpg '}/>
+            <BannerBoxV2
+              info="left"
+              image={
+                "https://serviceapi.spicezgold.com/download/1741664496923_1737020250515_New_Project_47.jpg "
+              }
+            />
 
-              <BannerBoxV2 info="right" image={'https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg'}/>
+            <BannerBoxV2
+              info="right"
+              image={
+                "https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg"
+              }
+            />
           </div>
         </div>
       </section>
@@ -96,7 +107,7 @@ const Home = () => {
             <p className="font-bold text-[25px]">- Only $200*</p>
           </div>
 
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
 
@@ -155,7 +166,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
+     
     </>
   );
 };

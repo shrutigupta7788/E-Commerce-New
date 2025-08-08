@@ -121,22 +121,16 @@ const Footer = () => {
               </div>
 
               <div className="part2_col1 w-[50%]">
-
-
-
-
-
-
                 <h2 className="text-[18px] font-[600] !mb-4">Our Company</h2>
                 <ul className="list">
                   <li className="list-none text-[14px] w-full !mb-2">
                     <Link to={"/"} className="link">
-                   Delivery
+                      Delivery
                     </Link>
                   </li>
                   <li className="list-none text-[14px] w-full !mb-2">
                     <Link to={"/"} className="link">
-                   Legal Notice
+                      Legal Notice
                     </Link>
                   </li>
                   <li className="list-none text-[14px] w-full !mb-2">
@@ -146,12 +140,12 @@ const Footer = () => {
                   </li>
                   <li className="list-none text-[14px] w-full !mb-2">
                     <Link to={"/"} className="link">
-                     About us
+                      About us
                     </Link>
                   </li>
                   <li className="list-none text-[14px] w-full !mb-2">
                     <Link to={"/"} className="link">
-                     Secure payment
+                      Secure payment
                     </Link>
                   </li>
                   <li className="list-none text-[14px] w-full !mb-2">
