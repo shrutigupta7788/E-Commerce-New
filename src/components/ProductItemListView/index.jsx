@@ -10,9 +10,9 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 
 const ProductItem = () => {
   return (
-    <div className="productItem !shadow-lg overflow-hidden !border-0 border-[rgba(0,0,0,0.1)] flex items-center">
+    <div className="productItem !shadow-lg overflow-hidden !border-0 relative border-[rgba(0,0,0,0.1)] flex items-center">
       <div className="imgWrapper w-[25%]  overflow-hidden relative !rounded-lg">
-        <div className="img h-[220px] overflow-hidden">
+        <div className="img h-[300px] overflow-hidden">
           {/* <Link> */}
           <img
             src="https://serviceapi.spicezgold.com/download/1742462552739_siril-georgette-pink-color-saree-with-blouse-piece-product-images-rvrk9p11sk-0-202308161432.webp"
@@ -31,7 +31,7 @@ const ProductItem = () => {
         10%
       </span>
 
-      <div className="actions absolute top-[-150px] right-[5px] z-50 flex items-center gap-2 flex-col w-[50px] transition-all duration-300">
+      <div className="actions absolute top-[-150px] left-56 z-50 flex items-center gap-2 flex-col w-[50px] transition-all duration-300">
         <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-[#ff5252]  hover:text-white group">
           <MdZoomOutMap className="text-[18px] !text-black group-hover:!text-white hover:!text-white" />
         </Button>
@@ -46,7 +46,7 @@ const ProductItem = () => {
       </div>
 
       <div className="info !p-3 !py-5 !px-8 !w-[75%]">
-        <h6 className="text-[15px]">
+        <h6 className="text-[15px] !font-[400]">
           <Link to={"/"} className="link transition-all">
             All about you
           </Link>

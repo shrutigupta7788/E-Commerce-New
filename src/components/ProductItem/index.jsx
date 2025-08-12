@@ -10,7 +10,7 @@ import { MdZoomOutMap } from "react-icons/md";
 
 const ProductItem = () => {
   return (
-    <div className="productItem !shadow-lg overflow-hidden !border-0 border-[rgba(0,0,0,0.1)] ">
+    <div className="productItem !shadow-lg overflow-hidden !border-0 relative border-[rgba(0,0,0,0.1)] ">
       <div className="imgWrapper w-[100%]  overflow-hidden relative !rounded-lg">
         
           <div className="img h-[220px] overflow-hidden">
@@ -48,7 +48,7 @@ const ProductItem = () => {
       </div>
 
       <div className="info !p-3 !py-5 ">
-        <h6 className="text-[13px]">
+        <h6 className="text-[13px] !font-[400]">
           <Link to={"/"} className="link transition-all">
             All about you
           </Link>

@@ -74,7 +74,7 @@ const Home = () => {
                 scrollButtons="auto"
                 aria-label="scrollable auto tabs example"
               >
-                <Tab label="Fashion" />
+                <Tab label="Fashion"  />
                 <Tab label="Electronics" />
                 <Tab label="Bags" />
                 <Tab label="Footwear" />

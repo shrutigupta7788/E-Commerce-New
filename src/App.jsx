@@ -19,7 +19,7 @@ function App() {
    <Route path={"/"} exact={true} element={< Home/>}/>
    <Route path={"/productListing"} exact={true} element={< ProductListing/>}/>
     
-  <Route path={"/product/:id"} exact={true} element={< ProductDetails/>}/>
+  <Route path={"/productDetails"} exact={true} element={< ProductDetails/>}/>
   </Routes>
   <Footer/>
 </BrowserRouter>
