@@ -33,7 +33,7 @@ const CategoryCollapse = () => {
         <ul className="w-full">
             
           <li className="list-none flex items-center relative flex-col">
-            <Link to={"/"} className="w-full">
+            <Link to={"/productListing"} className="w-full">
               <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
                 Fashion
               </Button>
@@ -54,7 +54,7 @@ const CategoryCollapse = () => {
             {submenuIndex === 0 && (
               <ul className="submenu  w-full !pl-3">
                 <li className="list-none relative">
-                  <Link to={"/"} className="w-full">
+                  <Link to={"/productListing"} className="w-full">
                     <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
                       Apparel
                     </Button>
@@ -76,7 +76,7 @@ const CategoryCollapse = () => {
                     <ul className="inner_submenu  w-full !pl-3">
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Smart Tablet
@@ -85,7 +85,7 @@ const CategoryCollapse = () => {
 
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Crepe T-Shirt
@@ -93,7 +93,7 @@ const CategoryCollapse = () => {
                       </li>
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Leather Watch
@@ -101,7 +101,7 @@ const CategoryCollapse = () => {
                       </li>
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Rolling Diamond
@@ -116,7 +116,7 @@ const CategoryCollapse = () => {
 
 
          <li className="list-none flex items-center relative flex-col">
-            <Link to={"/"} className="w-full">
+            <Link to={"/productListing"} className="w-full">
               <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
                 Outerwear
               </Button>
@@ -137,7 +137,7 @@ const CategoryCollapse = () => {
             {submenuIndex === 1 && (
               <ul className="submenu  w-full !pl-3">
                 <li className="list-none relative">
-                  <Link to={"/"} className="w-full">
+                  <Link to={"/productListing"} className="w-full">
                     <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
                       Apparel
                     </Button>
@@ -159,7 +159,7 @@ const CategoryCollapse = () => {
                     <ul className="inner_submenu  w-full !pl-3">
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Smart Tablet
@@ -168,7 +168,7 @@ const CategoryCollapse = () => {
 
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Crepe T-Shirt
@@ -176,7 +176,7 @@ const CategoryCollapse = () => {
                       </li>
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Leather Watch
@@ -184,7 +184,7 @@ const CategoryCollapse = () => {
                       </li>
                       <li className="list-none relative mb-1">
                         <Link
-                          to={"/"}
+                          to={"/productListing"}
                           className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
                         >
                           Rolling Diamond

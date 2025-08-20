@@ -49,7 +49,7 @@ const Navigation = () => {
                 <div className="submenu absolute top-[120%] left-[0%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
                   <ul>
                     <li className="list-none w-full relative">
-                      <Link to={"/"} className="w-full">
+                      <Link to={"/productListing"} className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                           Men
                         </Button>
@@ -58,35 +58,35 @@ const Navigation = () => {
                       <div className="submenu absolute top-[0%] left-[100%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
                         <ul>
                           <li className="list-none w-full">
-                            <Link to={"/"} className="w-full">
+                            <Link to={"/productListing"} className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                                 T-Shirt
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
-                            <Link to={"/"} className="w-full">
+                            <Link to={"/productListing"} className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                                 Jeans
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
-                            <Link to={"/"} className="w-full">
+                            <Link to={"/productListing"} className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                                 Footware
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
-                            <Link to={"/"} className="w-full">
+                            <Link to={"/productListing"} className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                                 watch
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
-                            <Link to={"/"} className="w-full">
+                            <Link to={"/productListing"} className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                                 Pents
                               </Button>
@@ -97,28 +97,28 @@ const Navigation = () => {
                       
                     </li>
                     <li className="list-none w-full">
-                      <Link to={"/"} className="w-full">
+                      <Link to={"/productListing"} className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                           Women
                         </Button>
                       </Link>
                     </li>
                     <li className="list-none w-full">
-                      <Link to={"/"} className="w-full">
+                      <Link to={"/productListing"} className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                           Kids
                         </Button>
                       </Link>
                     </li>
                     <li className="list-none w-full">
-                      <Link to={"/"} className="w-full">
+                      <Link to={"/productListing"} className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                           Boys
                         </Button>
                       </Link>
                     </li>
                     <li className="list-none w-full">
-                      <Link to={"/"} className="w-full">
+                      <Link to={"/productListing"} className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none hover:!text-[#ff5252]">
                           Girls
                         </Button>
@@ -129,7 +129,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     {" "}
                     Electronics
@@ -138,7 +138,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     Bags
                   </Button>
@@ -146,7 +146,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     Footware
                   </Button>
@@ -154,7 +154,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     Groceries
                   </Button>
@@ -162,7 +162,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     Beauty
                   </Button>
@@ -170,7 +170,7 @@ const Navigation = () => {
               </li>
 
               <li className="list-none">
-                <Link to="/" className="link transition text-[14px] font-[500]">
+                <Link to="/productListing" className="link transition text-[14px] font-[500]">
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                     Jewellery
                   </Button>

@@ -9,7 +9,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Search for product..."
-        className="w-full h-[35px] focus:outline-none bg-inherit p-2 text-[15px]"
+        className="w-full !px-3 h-[50px] focus:outline-none bg-inherit p-2 text-[15px]"
       />
       <Button className="!absolute top-[4px] right-[5px] z-50 !w-[37px] !min-w-[37px] h-[37px] !rounded-full !text-black">
         <IoSearch className="text-[#4e4e4e] text-[22px]" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../ProductItem/style.css";
 import { Link } from "react-router-dom";
 import Rating from "@mui/material/Rating";
@@ -7,24 +7,28 @@ import { FaRegHeart } from "react-icons/fa";
 
 import { IoGitCompareOutline } from "react-icons/io5";
 import { MdZoomOutMap } from "react-icons/md";
+import { MyContext } from "../../App";
 
 const ProductItem = () => {
+
+const context = useContext(MyContext)
+
   return (
     <div className="productItem !shadow-lg overflow-hidden !border-0 relative border-[rgba(0,0,0,0.1)] ">
       <div className="imgWrapper w-[100%]  overflow-hidden relative !rounded-lg">
         
-          <div className="img h-[220px] overflow-hidden">
-            {/* <Link> */}
+          <div className="img h-[220px] overflow-hidden ">
+             <Link to={"/productDetails"}> 
             <img
               src="https://serviceapi.spicezgold.com/download/1742462552739_siril-georgette-pink-color-saree-with-blouse-piece-product-images-rvrk9p11sk-0-202308161432.webp"
-              className="w-full "
+              className="w-full !absolute"
             />
 
             <img
               src="https://rukminim2.flixcart.com/image/612/612/l4oi4cw0/sari/0/i/z/free-starwalk-52-by-wearing-our-new-amazing-product-you-look-original-imagfgxn7zjcafdy.jpeg?q=70"
               className="w-full transition-all duration-700 !absolute top-0 left-0 opacity-0 hover:opacity-100  hover:scale-105"
             />
-                {/* </Link> */}
+                </Link>
           </div>
         
       </div>
@@ -34,7 +38,7 @@ const ProductItem = () => {
       </span>
 
       <div className="actions absolute top-[-150px] right-[5px] z-50 flex items-center gap-2 flex-col w-[50px] transition-all duration-300">
-        <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-[#ff5252]  hover:text-white group">
+        <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-[#ff5252]  hover:text-white group" onClick={()=>context.setOpenProductDetailsModel(true)}>
           <MdZoomOutMap className="text-[18px] !text-black group-hover:!text-white hover:!text-white" />
         </Button>
 
